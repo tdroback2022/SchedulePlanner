@@ -1,0 +1,5 @@
+            - View: #Sleeping
+                style:
+                  width: 100%
+                  height: 33%
+                  backgroundColor: rgb(90, 90, 220)

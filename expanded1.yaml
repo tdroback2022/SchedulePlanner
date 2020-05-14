@@ -1,0 +1,204 @@
+- View: #Holds everything up to the box
+    style:
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      backgroundColor: rgb(235, 235, 235)
+    children:
+      - View:
+          style:
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          children:
+            - Button:
+                id: person
+                style:
+                  position: absolute
+                  left: 7%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: personalization.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: event
+                style:
+                  position: absolute
+                  left: 27%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: addEvent.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: home
+                style:
+                  position: absolute
+                  left: 47%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: home.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: priorities
+                style:
+                  position: absolute
+                  left: 67%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: priorities.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                style:
+                  position: absolute
+                  left: 87%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: expandedOutput.png
+                      style:
+                        width: 23
+                        height: 23 
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 5%
+            left: 5%
+            width: 90%
+            height: 5%
+          children:
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 0
+                      style:
+                        textAlign: center
+                        fontSize: 25                  
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 5
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 10
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 15
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 20
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 25
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 30
+                      style:
+                        textAlign: center
+                        fontSize: 25
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 10%
+            left: 5%
+            width: 90%
+            height: 80%
+            borderWidth: 3
+            borderColor: black
+          children:

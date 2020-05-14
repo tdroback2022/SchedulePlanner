@@ -1,0 +1,95 @@
+      - View:
+          style:
+            position: absolute
+            top: 60%
+            left: 5%
+            width: 90%
+            height: 5%
+          children:                                                                                                                                                                                                                                                             
+            - Text:
+                index: 30
+                style:
+                  fontSize: 25
+                  textAlign: center
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 70%
+            left: 5%
+            width: 90%
+            height: 20%
+          children: 
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 50
+                      style:
+                        textAlign: center
+                        fontSize: 25    
+                  - Text:
+                      index: 70
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 90
+                      style:
+                        textAlign: center
+                        fontSize: 10                                                     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 110
+                      style:
+                        textAlign: center
+                        fontSize: 22    
+                  - Text:
+                      index: 130
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 150
+                      style:
+                        textAlign: center
+                        fontSize: 10         
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 170
+                      style:
+                        textAlign: center
+                        fontSize: 25    
+                  - Text:
+                      index: 190
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 210
+                      style:
+                        textAlign: center
+                        fontSize: 10                      
+                                                                                  

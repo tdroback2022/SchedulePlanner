@@ -1,0 +1,572 @@
+- View: #Holds everything
+    style:
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      backgroundColor: rgb(235, 235, 235)
+    children:
+      - View:
+          style:
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          children:
+            - Button:
+                id: person
+                style:
+                  position: absolute
+                  left: 7%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: personalization.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: event
+                style:
+                  position: absolute
+                  left: 27%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: addEvent.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: home
+                style:
+                  position: absolute
+                  left: 47%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: home.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: priorities
+                style:
+                  position: absolute
+                  left: 67%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: priorities.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                style:
+                  position: absolute
+                  left: 87%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: expandedOutput.png
+                      style:
+                        width: 23
+                        height: 23 
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 5%
+            left: 5%
+            width: 90%
+            height: 5%
+          children:
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 0
+                      style:
+                        textAlign: center
+                        fontSize: 25                  
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 4
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 8
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 12
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 16
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 20
+                      style:
+                        textAlign: center
+                        fontSize: 25     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                children:
+                  - Text:
+                      index: 24
+                      style:
+                        textAlign: center
+                        fontSize: 25
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 10%
+            left: 5%
+            width: 90%
+            height: 45%
+            borderWidth: 3
+            borderColor: black
+          children:
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 18.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:
+                  - View: #Sleeping
+                      style:
+                        width: 100%
+                        height: 33%
+                        backgroundColor: rgb(90, 90, 220)
+                  - View: #Eating
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(220, 140, 0)
+                  - View: #Class
+                      style:
+                        width: 100%
+                        height: 8%
+                        backgroundColor: rgb(130, 200, 50)  
+                  - View: #Homework
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(60, 60, 60)
+                  - View: #Work
+                      style:
+                        width: 100%
+                        height: 12.5%
+                        backgroundColor: rgb(200, 50, 50)
+                  - View: #Other
+                      style:
+                        width: 100%
+                        height: 6.25%
+                        backgroundColor: rgb(160, 160, 160)
+      - View:
+          style:
+            position: absolute
+            top: 60%
+            left: 5%
+            width: 90%
+            height: 5%
+          children:                                                                                                                                                                                                                                                             
+            - Text:
+                index: 30
+                style:
+                  fontSize: 25
+                  textAlign: center
+      - View:
+          style:
+            position: absolute
+            flexDirection: row
+            top: 70%
+            left: 5%
+            width: 90%
+            height: 20%
+          children: 
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 50
+                      style:
+                        textAlign: center
+                        fontSize: 25    
+                  - Text:
+                      index: 70
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 90
+                      style:
+                        textAlign: center
+                        fontSize: 10                                                     
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 110
+                      style:
+                        textAlign: center
+                        fontSize: 22    
+                  - Text:
+                      index: 130
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 150
+                      style:
+                        textAlign: center
+                        fontSize: 10         
+            - View:
+                style:
+                  height: 100%
+                  flex: 1
+                  flexDirection: column
+                  justifyContent: space-between
+                  borderWidth: 2
+                  borderColor: black
+                children:
+                  - Text:
+                      index: 170
+                      style:
+                        textAlign: center
+                        fontSize: 25    
+                  - Text:
+                      index: 190
+                      style:
+                        textAlign: center
+                        fontSize: 15
+                  - Text:
+                      index: 210
+                      style:
+                        textAlign: center
+                        fontSize: 10                      
+                                                                                      

@@ -1,0 +1,102 @@
+      - View: #Hours of your day
+          style:
+            position: absolute
+            top: 5%
+            left: 50%
+            width: 50%
+            height: 47.5%
+            backgroundColor: rgb(235, 200, 25) #Whatever is left = free time
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+          children:
+            - View: #Sleeping
+                style:
+                  width: 100%
+                  height: {s}%
+                  backgroundColor: rgb(90, 90, 220)
+            - View: #Eating
+                style:
+                  width: 100%
+                  height: {e}%
+                  backgroundColor: rgb(220, 140, 0)
+            - View: #Class
+                style:
+                  width: 100%
+                  height: {c}%
+                  backgroundColor: rgb(130, 200, 50)  
+            - View: #Homework
+                style:
+                  width: 100%
+                  height: {h}%
+                  backgroundColor: rgb(60, 60, 60)
+            - View: #Work
+                style:
+                  width: 100%
+                  height: {w}%
+                  backgroundColor: rgb(200, 50, 50)
+            - View: #Other
+                style:
+                  width: 100%
+                  height: {o}%
+                  backgroundColor: rgb(160, 160, 160)
+            - View: #Event
+                style:
+                  width: 100%
+                  height: {v}%
+                  backgroundColor: rgb(160, 160, 160)
+      - View: #Up next
+          style:
+            position: absolute
+            top: 52.5%
+            left: 50%
+            width: 50%
+            height: 47.5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+            alignItems: center
+          children:
+            - Text:
+                style:
+                  marginTop: 15%
+                  fontSize: 30
+                  color: black
+                index: 12
+            - View:
+                style:
+                  width: 80%
+                  height: 10%
+            - View:
+                style:
+                  width: 80%
+                  height: 50%
+                  backgroundColor: rgb({r}, {g}, {b})
+                  borderWidth: 3
+                  flexDirection: column
+                  alignItems: center
+                children:
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 15
+                        color: black
+                      index: {title}
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 15
+                        color: black
+                      index: {time}
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 10
+                        color: black
+                      index: {description}
+
+            

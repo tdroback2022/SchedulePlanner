@@ -1,0 +1,9 @@
+            - View:
+                style:
+                  flexDirection: column
+                  height: 100%
+                  flex: 1
+                  borderWidth: 2
+                  borderColor: black
+                  justifyContent: space-between
+                children:

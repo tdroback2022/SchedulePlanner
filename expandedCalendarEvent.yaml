@@ -1,0 +1,7 @@
+                  - View:
+                      style:
+                        position: absolute
+                        top: {t}%
+                        width: 100%
+                        height: {h}%
+                        backgroundColor: rgb({r}, {g}, {b})

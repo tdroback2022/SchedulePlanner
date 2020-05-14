@@ -1,0 +1,13 @@
+                  - View:
+                      style:
+                        width: 100%
+                        height: {h}
+                        backgroundColor: rgb({r}, {g}, {b})
+
+// add_yaml("event.yaml", {{"h", whatever is calculated}, {"r", xx},{"g", xx}, {"b", xx}})
+// sleeping r=90, g=90, b=220
+// eating r=220, g=140, b=0
+// class r=130, g=200, b=50
+// homework r=60, g=60, b=60
+// work r=200, g=50, b=50
+// other r=160, g=160, b=160

@@ -1,0 +1,17 @@
+            - View:
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb({r}, {g}, {b})  #id
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: {title}
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: {time}

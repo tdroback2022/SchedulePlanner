@@ -1,0 +1,21 @@
+- Standardize YAML locations (Where should we be printing at?)
+
+- Write an Event YAML
+- - Event type will change view color
+- - Event duration will be used to figure out View height
+- - Make these clickable, so that when the user clicks on them
+    they are brought to a different page (see / edit the event)
+
+- Figure out how to add multiple event YAMLS
+- - When creating multiple Events on screen, check if there is a "~"
+
+
+- Figure out how to grab all the data from relevant memory addresses
+  when hitting "create event" button
+
+- work on creating organized id system for all necessary inputs in yaml files
+- - once this is done Ethan look into putting correct index locations for the writing in of txt file to event objects
+
+- figure out what format we are saving times in
+
+- continue to work on yaml interpolation

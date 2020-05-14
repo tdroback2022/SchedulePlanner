@@ -1,0 +1,497 @@
+- View: #Holds everything
+    style:
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      backgroundColor: rgb(235, 235, 235)
+    children:
+      - View:
+          style:
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          children:
+            - Button:
+                id: person
+                style:
+                  position: absolute
+                  left: 7%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: personalization.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: event
+                style:
+                  position: absolute
+                  left: 27%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: addEvent.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: home
+                style:
+                  position: absolute
+                  left: 47%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: home.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: priorities
+                style:
+                  position: absolute
+                  left: 67%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: priorities.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: expanded
+                style:
+                  position: absolute
+                  left: 87%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: expandedOutput.png
+                      style:
+                        width: 23
+                        height: 23 
+      - View: #Event type
+          style:
+            position: absolute
+            top: 5%
+            left: 0
+            width: 50%
+            height: 9%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 0
+      - View: #Repeats
+          style:
+            position: absolute
+            top: 20%
+            left: 50%
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 300
+      - TextInput: #Hour start input
+          style:
+            position: absolute
+            top: 25%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 325
+          len: 10
+      - Picker: #Event type picker
+          id: picker
+          style:
+            position: absolute
+            top: 10%
+            left: 0
+            width: 50%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 15
+          index: [15, 25, 35]
+      - View: #Event title name
+          style:
+            position: absolute
+            top: 20%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 50 
+      - TextInput: #Event title name input
+          style:
+            position: absolute
+            top: 25%
+            left: 0
+            width: 50%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 65
+          len: 23
+      - View: #On
+          style:
+            position: absolute
+            top: 35%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 80
+      - TextInput: #Month time input
+          style:
+            position: absolute
+            top: 40%
+            left: 0
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 85
+          len: 2
+      - TextInput: #Day time input
+          style:
+            position: absolute
+            top: 40%
+            left: 20%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 90
+          len: 2
+      - TextInput: #Year time input
+          style:
+            position: absolute
+            top: 40%
+            left: 40%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 95
+          len: 2
+      - View: #Due
+          style:
+            position: absolute
+            top: 35%
+            left: 50%
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 335
+      - TextInput: #Month due input
+          style:
+            position: absolute
+            top: 40%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 355
+          len: 2
+      - TextInput: #Day due input
+          style:
+            position: absolute
+            top: 40%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 360
+          len: 2
+      - TextInput: #Year due input
+          style:
+            position: absolute
+            top: 40%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 365
+          len: 2
+      - View: #From
+          style:
+            position: absolute
+            top: 50%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 100
+      - TextInput: #Hour start input
+          style:
+            position: absolute
+            top: 55%
+            left: 0
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 105
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 55%
+            left: 14%
+          index: 108
+      - TextInput: #Minute start input
+          style:
+            position: absolute
+            top: 55%
+            left: 20%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 110
+          len: 2
+      - Picker: #AM/PM start time picker
+          id: picker
+          style:
+            position: absolute
+            top: 55%
+            left: 40%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 115
+          index: [115, 120]
+      - View: #To
+          style:
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 125
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 55%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 130
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 55%
+            left: 64%
+          index: 133
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 55%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 135
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker
+          style:
+            position: absolute
+            top: 55%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 140
+          index: [140, 145]
+      - View: #Event description
+          style:
+            position: absolute
+            top: 70%
+            left: 0
+            width: 50%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            flexDirection: column
+            alignItems: center
+            justifyContent: center
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  fontSize: 20
+                  color: black
+                index: 150 
+      - TextInput: #Event description input
+          style:
+            position: absolute
+            top: 75%
+            left: 0
+            width: 75%
+            height: 15%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            alignText: center
+            textAlign: center
+          index: 170
+          len: 75
+      - Button:
+          id: create
+          style:
+            position: absolute
+            top: 91%
+            left: 35%
+            width: 30%
+            height: 8%
+            justifyContent: center
+            backgroundColor: rgb(200, 200, 200)
+          on_touch:
+            backgroundColor: rgb(180, 180, 180)
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  fontSize: 15
+                index: 270      

@@ -1,0 +1,943 @@
+- View: #Holds everything
+    style:
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      backgroundColor: rgb(235, 235, 235)
+    children:
+      - View:
+          style:
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          children:
+            - Button:
+                id: person
+                style:
+                  position: absolute
+                  left: 7%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: personalization.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: event
+                style:
+                  position: absolute
+                  left: 27%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: addEvent.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: home
+                style:
+                  position: absolute
+                  left: 47%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: home.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: priorities
+                style:
+                  position: absolute
+                  left: 67%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: priorities.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: expanded
+                style:
+                  position: absolute
+                  left: 87%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: expandedOutput.png
+                      style:
+                        width: 23
+                        height: 23 
+      - Text: #On
+          index: 0
+          style:
+            position: absolute
+            top: 7%
+            left: 38%
+            width: 100%
+      - Picker: #Day picker
+          id: picker1
+          style:
+            position: absolute
+            top: 6%
+            left: 44%
+            width: 20%
+            textAlign: center
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 4
+          index: [4, 8, 12, 16, 20, 24, 28]
+      - Text: #How long do you normally spend
+          index: 32
+          style:
+            position: absolute
+            top: 11%
+            textAlign: center
+            width: 100%
+      - Button: #Save new input
+          id: save
+          style:
+            position: absolute
+            top: 10%
+            left: 85%
+            width: 15%
+            height: 5%
+            borderWidth: 3
+            justifyContent: center
+            backgroundColor: rgb(200, 200, 200)
+          on_touch:
+            backgroundColor: rgb(180, 180, 180)
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  fontSize: 15
+                  color: black
+                index: 390
+      - View: #Sleeping
+          style:
+            position: absolute
+            top: 15%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 75
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 20%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 85
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 20%
+            left: 24%
+          index: 90
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 20%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 92
+          len: 2
+      - View: #When
+          style:
+            position: absolute
+            top: 15%
+            left: 50%
+            width: 50%
+            height: 70%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 70
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 20%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 96
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 20%
+            left: 64%
+          index: 100
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 20%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 102
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 20%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 106
+          index: [106, 110]
+      - View: #Breakfast
+          style:
+            position: absolute
+            top: 27%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 115
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 32%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 125
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 32%
+            left: 24%
+          index: 130
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 32%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 132
+          len: 2
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 32%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 136
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 32%
+            left: 64%
+          index: 140
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 32%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 142
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 32%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 146
+          index: [146, 150]
+      - View: #Lunch
+          style:
+            position: absolute
+            top: 39%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 155
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 44%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 165
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 44%
+            left: 24%
+          index: 170
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 44%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 172
+          len: 2
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 44%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 176
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 44%
+            left: 64%
+          index: 180
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 44%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 182
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 44%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 186
+          index: [186, 190]
+      - View: #Dinner
+          style:
+            position: absolute
+            top: 51%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 195
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 56%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 205
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 56%
+            left: 24%
+          index: 210
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 56%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 212
+          len: 2
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 56%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 216
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 56%
+            left: 64%
+          index: 220
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 56%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 222
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 56%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 226
+          index: [226, 230]
+      - View: #Work
+          style:
+            position: absolute
+            top: 63%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 235
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 68%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 245
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 68%
+            left: 24%
+          index: 250
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 68%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 252
+          len: 2
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 68%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 256
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 68%
+            left: 64%
+          index: 260
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 68%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 262
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 68%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 266
+          index: [266, 270]
+      - View: #Other
+          style:
+            position: absolute
+            top: 75%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 275
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 80%
+            left: 10%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 285
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 80%
+            left: 24%
+          index: 290
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 80%
+            left: 30%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 292
+          len: 2
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 80%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 296
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 80%
+            left: 64%
+          index: 300
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 80%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 302
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 80%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 306
+          index: [306, 310]
+      - Button:
+          id: add
+          style:
+            position: absolute
+            top: 85%
+            left: 50%
+            width: 50%
+            height: 5%
+            borderWidth: 3
+            justifyContent: center
+            backgroundColor: rgb(200, 200, 200)
+          on_touch:
+            backgroundColor: rgb(180, 180, 180)
+          children:
+            - Text: #Add a class
+                style:
+                  textAlign: center
+                  fontSize: 20
+                  color: black
+                index: 375
+      - TextInput: #Class name
+          style:
+            position: absolute
+            top: 85%
+            left: 0
+            width: 50%
+            height: 5%
+            fontSize: 20
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 315
+          len: 26
+      - View: #From
+          style:
+            position: absolute
+            top: 90%
+            left: 0
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 330
+      - TextInput: #Hour input
+          style:
+            position: absolute
+            top: 95%
+            left: 0
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 340
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 95%
+            left: 14%
+          index: 345
+      - TextInput: #Minuteinput
+          style:
+            position: absolute
+            top: 95%
+            left: 20%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 347
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 95%
+            left: 40%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 395
+          index: [395, 398] 
+      - View: #When
+          style:
+            position: absolute
+            top: 90%
+            left: 50%
+            width: 50%
+            height: 10%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+          children:
+            - Text:
+                style:
+                  textAlign: center
+                  marginTop: 2%
+                  fontSize: 20
+                  color: black
+                index: 350
+      - TextInput: #Hour end input
+          style:
+            position: absolute
+            top: 95%
+            left: 50%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 355
+          len: 2
+      - Text: #:
+          style:
+            position: absolute
+            alignText: center
+            marginTop: 2%
+            fontSize: 15
+            top: 95%
+            left: 64%
+          index: 360
+      - TextInput: #Minute end input
+          style:
+            position: absolute
+            top: 95%
+            left: 70%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            textAlign: center
+          index: 362
+          len: 2
+      - Picker: #AM/PM end time picker
+          id: picker1
+          style:
+            position: absolute
+            top: 95%
+            left: 90%
+            width: 10%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          indexPos: 366
+          index: [366, 370]    

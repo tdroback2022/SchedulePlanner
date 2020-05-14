@@ -1,0 +1,47 @@
+      - View: #Up next
+          style:
+            position: absolute
+            top: 52.5%
+            left: 50%
+            width: 50%
+            height: 47.5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+            alignItems: center
+          children:
+            - Text:
+                style:
+                  marginTop: 15%
+                  fontSize: 30
+                  color: black
+                index: 0
+            - View:
+                style:
+                  width: 80%
+                  height: 10%
+            - View:
+                style:
+                  width: 80%
+                  height: 50%
+                  backgroundColor: rgb(130, 200, 50)
+                  borderWidth: 3
+                  flexDirection: column
+                  alignItems: center
+                children:
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 20
+                        color: black
+                      index: 10
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 20
+                        color: black
+                      index: 30
+            

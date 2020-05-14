@@ -1,0 +1,313 @@
+- View: #Holds everything
+    style:
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      backgroundColor: rgb(235, 235, 235)
+    children: #Naviagtion menu (let's use pictures for the future icons)
+      - View:
+          style:
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+          children:
+            - Button:
+                id: person
+                style:
+                  position: absolute
+                  left: 7%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: personalization.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: event
+                style:
+                  position: absolute
+                  left: 27%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: addEvent.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: home1
+                style:
+                  position: absolute
+                  left: 47%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: home.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: priorities
+                style:
+                  position: absolute
+                  left: 67%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: priorities.png
+                      style:
+                        width: 23
+                        height: 23
+            - Button:
+                id: expanded1
+                style:
+                  position: absolute
+                  left: 87%
+                  bottom: 3
+                  width: 23
+                  height: 23
+                  justifyContent: center
+                  alignItems: center
+                  backgroundColor: rgb(235, 235, 235)
+                on_touch:
+                  backgroundColor: rgb(255, 255, 200)
+                children:
+                  - Image:
+                      source: expandedOutput.png
+                      style:
+                        width: 23
+                        height: 23          
+      - View: #Today's events
+          style:
+            position: absolute
+            top: 5%
+            left: 0
+            width: 50%
+            height: 95%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+            justifyContent: space-around
+            alignItems: center
+          children:
+            - View:
+                style:
+                  width: 80%
+                  height: 1%
+                children:
+                  - Text:
+                      index: 50
+                      style:
+                        textAlign: center
+                        fontSize: 15
+            - View: #Class
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb(130, 200, 50)
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 70
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 90
+            - View: #Class
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb(130, 200, 50)
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 110
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 130
+            - View: #Homework
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb(60, 60, 60)
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(235, 235, 235)
+                      index: 150
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(235, 235, 235)
+                      index: 170
+            - View: #Work
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb(200, 50, 50)
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 190
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(0, 0, 0)
+                      index: 210
+            - View: #Homework
+                style:
+                  width: 80%
+                  height: 12%
+                  backgroundColor: rgb(60, 60, 60)
+                  justifyContent: space-around
+                children:
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(235, 235, 235)
+                      index: 230
+                  - Text:                      
+                      style:
+                        textAlign: center
+                        color: rgb(235, 235, 235)
+                      index: 250
+      - View: #Hours of your day
+          style:
+            position: absolute
+            top: 5%
+            left: 50%
+            width: 50%
+            height: 47.5%
+            backgroundColor: rgb(235, 200, 25) #Whatever is left = free time
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+          children:
+            - View: #Sleeping
+                style:
+                  width: 100%
+                  height: 33%
+                  backgroundColor: rgb(90, 90, 220)
+            - View: #Eating
+                style:
+                  width: 100%
+                  height: 8%
+                  backgroundColor: rgb(220, 140, 0)
+            - View: #Class
+                style:
+                  width: 100%
+                  height: 8%
+                  backgroundColor: rgb(130, 200, 50)  
+            - View: #Homework
+                style:
+                  width: 100%
+                  height: 18.5%
+                  backgroundColor: rgb(60, 60, 60)
+            - View: #Work
+                style:
+                  width: 100%
+                  height: 12.5%
+                  backgroundColor: rgb(200, 50, 50)
+            - View: #Other
+                style:
+                  width: 100%
+                  height: 6.25%
+                  backgroundColor: rgb(160, 160, 160)
+      - View: #Up next
+          style:
+            position: absolute
+            top: 52.5%
+            left: 50%
+            width: 50%
+            height: 47.5%
+            backgroundColor: rgb(235, 235, 235)
+            borderWidth: 3
+            borderColor: black
+            flexDirection: column
+            alignItems: center
+          children:
+            - Text:
+                style:
+                  marginTop: 15%
+                  fontSize: 30
+                  color: black
+                index: 0
+            - View:
+                style:
+                  width: 80%
+                  height: 10%
+            - View:
+                style:
+                  width: 80%
+                  height: 50%
+                  backgroundColor: rgb(130, 200, 50)
+                  borderWidth: 3
+                  flexDirection: column
+                  alignItems: center
+                children:
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 20
+                        color: black
+                      index: 10
+                  - Text:
+                      style:
+                        textAlign: center
+                        marginTop: 10%
+                        fontSize: 20
+                        color: black
+                      index: 30
+            
